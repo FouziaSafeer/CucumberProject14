@@ -53,4 +53,10 @@ public class StepsDefClass {
     }
 
 
+
+    @Then("user verify dashboard page")
+    public void user_verify_dashboard_page() {
+
+    }
+
 }
