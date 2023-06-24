@@ -1,27 +1,28 @@
-/*
-package CucumberTool;
+package steps;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import utils.CommonMethods;
+import utils.ConfigReader;
 
 import java.util.concurrent.TimeUnit;
 
-public class StepsDefClass {
-    WebDriver driver;//declare at class level
+public class LoginSteps extends CommonMethods {
+   // WebDriver driver;//declare at class level
     @Given("user is navigated to HRMS application")
     public void user_is_navigated_to_hrms_application() {
-        WebDriverManager.chromedriver().setup();//liberary dependance we are using
+        openBrowserAndLaunchApplication();
+        /*WebDriverManager.chromedriver().setup();//liberary dependance we are using
         driver = new ChromeDriver();
         driver.get("http://hrm.syntaxtechs.net/humanresources/symfony/web/index.php/auth/login");
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);*/
     }
 
     @When("user enters valid username and valid password")
@@ -29,8 +30,8 @@ public class StepsDefClass {
 
         WebElement usernameFeild=driver.findElement(By.id("txtUsername"));
         WebElement passwordFeild=driver.findElement(By.id("txtPassword"));
-        usernameFeild.sendKeys("admin");
-        passwordFeild.sendKeys("Hum@nhrm123");
+        usernameFeild.sendKeys(ConfigReader.getPropertyValue("username"));
+        passwordFeild.sendKeys(ConfigReader.getPropertyValue("password"));
     }
 
     @When("user clicks on login button")
@@ -43,22 +44,13 @@ public class StepsDefClass {
     @Then("user is successfully logged in")
     public void user_is_successfully_logged_in() {
 
-       WebElement welcomeMessage=driver.findElement(By.id("welcome"));
-      String message= welcomeMessage.getText();
-      if(welcomeMessage.isDisplayed()){
-          System.out.println("test is passed");
-      }else {
-          System.out.println("Test is failed");
-      }
+        WebElement welcomeMessage=driver.findElement(By.id("welcome"));
+        String message= welcomeMessage.getText();
+        if(welcomeMessage.isDisplayed()){
+            System.out.println("test is passed");
+        }else {
+            System.out.println("Test is failed");
+        }
         System.out.println(message);
     }
-
-
-
-    @Then("user verify dashboard page")
-    public void user_verify_dashboard_page() {
-
-    }
-
 }
-*/
