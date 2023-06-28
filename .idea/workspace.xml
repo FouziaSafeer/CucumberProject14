@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8eb120bc-73bb-43ae-b9f9-5e6ee45f583f" name="Changes" comment="add employee feature added">
+    <list default="true" id="8eb120bc-73bb-43ae-b9f9-5e6ee45f583f" name="Changes" comment="add few common methods">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/steps/EmployeeSearchSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/features/EmployeeSearch.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runners/SmokeRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/SmokeRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/steps/LoginSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/LoginSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/utils/CommonMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/CommonMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/Constants.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,14 +52,16 @@
       <recent name="C:\Users\rajah\IdeaProjects\Batch14CucumberClasses\src\test\resources\features" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SmokeRunner">
-    <configuration name="Feature: Login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber Java.Scenario: Search employee by id">
+    <configuration name="Scenario: Search employee by id" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/CucumberTool/Login.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/EmployeeSearch.feature" />
+      <option name="GLUE" value="steps" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="Batch14CucumberClasses" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: Login" />
+      <option name="NAME_FILTER" value="^Search employee by id$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Search employee by id$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Search employee by id" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -140,11 +144,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: Search employee by id" />
         <item itemvalue="JUnit.SmokeRunner" />
         <item itemvalue="Cucumber Java.Scenario: Valid admin login (1)" />
         <item itemvalue="JUnit.RunnerClass" />
         <item itemvalue="Cucumber Java.Scenario: Verify dashboard" />
-        <item itemvalue="Cucumber Java.Feature: Login" />
       </list>
     </recent_temporary>
   </component>
@@ -178,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687649581420</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add few common methods">
+      <created>1687958226488</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1687958226488</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -196,7 +207,8 @@
     <MESSAGE value="cucumber tool" />
     <MESSAGE value="runner class added" />
     <MESSAGE value="add employee feature added" />
-    <option name="LAST_COMMIT_MESSAGE" value="add employee feature added" />
+    <MESSAGE value="add few common methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="add few common methods" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

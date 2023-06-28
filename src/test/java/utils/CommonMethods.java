@@ -1,11 +1,13 @@
 package utils;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.concurrent.TimeUnit;
@@ -52,11 +54,31 @@ public class CommonMethods {
     public static void waitForClickablity(WebElement element){
         getWait().until(ExpectedConditions.elementToBeClickable(element));
     }
-
+//this method will perform click operation but before click, it will wait for element to be clickable
     public static void click(WebElement element){
         waitForClickablity(element);
         element.click();
     }
+// in which condition we use Java script executor, to scroll, to high light, mouse and keybord action
+    //this method will return JavaScript Executor object
+    public static JavascriptExecutor getJSExecutor(){
+JavascriptExecutor js=(JavascriptExecutor) driver;
+return js;
+    }
+//this method will perform click on element using javascript executor
+    public static void jsClick(WebElement element){
+        getJSExecutor().executeScript("arguments[0].click();",element);
+    }
+//selecting dropdown using text
+    public static void selectDropdown(WebElement element,String text){
+
+    Select s=new Select(element);
+    s.selectByVisibleText(text);
+
+}
+
+
+
 
 
 }

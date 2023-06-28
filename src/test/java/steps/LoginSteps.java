@@ -41,7 +41,8 @@ public class LoginSteps extends CommonMethods {
     public void user_clicks_on_login_button() {
 
         WebElement loginBtn=driver.findElement(By.id("btnLogin"));
-        loginBtn.click();
+        click(loginBtn);//using commom methods, it will wait for element to be clickable then click
+      //  loginBtn.click();
     }
 
     @Then("user is successfully logged in")
