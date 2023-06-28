@@ -31,4 +31,11 @@ public class EmployeeSearchSteps extends CommonMethods {
 
     }
 
+    @When("user enters valid employee name")
+    public void user_enters_valid_employee_name() {
+        WebElement searchNameFeild= driver.findElement(By.id("empsearch_employee_name_empName"));
+        sendText(searchNameFeild,"Fouzia");
+
+    }
+
 }
