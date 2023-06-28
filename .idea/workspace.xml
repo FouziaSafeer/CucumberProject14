@@ -4,15 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8eb120bc-73bb-43ae-b9f9-5e6ee45f583f" name="Changes" comment="UC 231 Search the employee">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/LoginPage.java" afterDir="false" />
+    <list default="true" id="8eb120bc-73bb-43ae-b9f9-5e6ee45f583f" name="Changes" comment="Impliment POM and create page of LoginPage">
+      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/AddEmployeePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/DashboardPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/steps/PageInitializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runners/SmokeRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/SmokeRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/AddEmployeeSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/AddEmployeeSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/steps/EmployeeSearchSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/EmployeeSearchSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/steps/LoginSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/LoginSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Dashboard.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Dashboard.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/CommonMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/CommonMethods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/EmployeeSearch.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/EmployeeSearch.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Login.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +55,7 @@
       <recent name="C:\Users\rajah\IdeaProjects\Batch14CucumberClasses\src\test\resources\features" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SmokeRunner">
+  <component name="RunManager" selected="Cucumber Java.Scenario: Valid admin login (1)">
     <configuration name="Scenario: Search employee by id" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/EmployeeSearch.feature" />
@@ -93,15 +95,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Verify dashboard" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Valid ess login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/java/CucumberTool/Dashboard.feature" />
-      <option name="GLUE" value="CucumberTool" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Login.feature" />
+      <option name="GLUE" value="steps" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="Batch14CucumberClasses" />
-      <option name="NAME_FILTER" value="^Verify dashboard$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Verify dashboard$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Verify dashboard" />
+      <option name="NAME_FILTER" value="^Valid ess login$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Valid ess login$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Valid ess login" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -145,11 +147,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: Valid admin login (1)" />
+        <item itemvalue="Cucumber Java.Scenario: Valid ess login" />
         <item itemvalue="JUnit.SmokeRunner" />
         <item itemvalue="Cucumber Java.Scenario: Search employee by id" />
-        <item itemvalue="Cucumber Java.Scenario: Valid admin login (1)" />
         <item itemvalue="JUnit.RunnerClass" />
-        <item itemvalue="Cucumber Java.Scenario: Verify dashboard" />
       </list>
     </recent_temporary>
   </component>
@@ -197,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687965316081</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Impliment POM and create page of LoginPage">
+      <created>1687972742248</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1687972742248</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -223,7 +232,8 @@
     <MESSAGE value="add employee feature added" />
     <MESSAGE value="add few common methods" />
     <MESSAGE value="UC 231 Search the employee" />
-    <option name="LAST_COMMIT_MESSAGE" value="UC 231 Search the employee" />
+    <MESSAGE value="Impliment POM and create page of LoginPage" />
+    <option name="LAST_COMMIT_MESSAGE" value="Impliment POM and create page of LoginPage" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

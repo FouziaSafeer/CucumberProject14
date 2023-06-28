@@ -10,8 +10,9 @@ public class EmployeeSearchSteps extends CommonMethods {
 
     @When("user clicks on EmployeeList Option")
     public void user_clicks_on_employee_list_option() {
-        WebElement empListOption=driver.findElement(By.id("menu_pim_viewEmployeeList"));
-            click(empListOption);
+       // WebElement empListOption=driver.findElement(By.id("menu_pim_viewEmployeeList"));
+           // click(empListOption);
+        click(dashboard.empListOption);
     }
     @When("user enter valid employee id")
     public void user_enter_valid_employee_id() {

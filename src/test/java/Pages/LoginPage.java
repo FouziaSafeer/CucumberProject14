@@ -17,9 +17,11 @@ public class LoginPage extends CommonMethods {
     @FindBy(id="btnLogin")
     public WebElement loginButton;
     //
-    WebElement welcomeMessage=driver.findElement(By.id("welcome"));
-    @FindBy(id="welcome")
-    public WebElement getWelcomeMessage;
+   // WebElement welcomeMessage=driver.findElement(By.id("welcome"));
+
+
+    @FindBy(id="spanMessage")
+    public WebElement getErrorMessage;
 
     //how to implement in our code, what is the concept of constructor
     //inicialize object,variables, constructor  the block of code having same name as our class name
