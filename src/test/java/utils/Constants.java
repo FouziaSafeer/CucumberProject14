@@ -8,6 +8,7 @@ public class Constants {
     //public ..so can be seen in project,static
     //static beacuse without object, final because final
   // String path= System.getProperty("user.dir"); get the directory from root
-
+        public static final int EXPLICIT_WAIT=20;
+        public static final int IMPLICIT_WAIT=10;
 }
 

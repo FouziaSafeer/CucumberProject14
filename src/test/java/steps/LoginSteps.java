@@ -30,8 +30,11 @@ public class LoginSteps extends CommonMethods {
 
         WebElement usernameFeild=driver.findElement(By.id("txtUsername"));
         WebElement passwordFeild=driver.findElement(By.id("txtPassword"));
-        usernameFeild.sendKeys(ConfigReader.getPropertyValue("username"));
-        passwordFeild.sendKeys(ConfigReader.getPropertyValue("password"));
+        sendText(usernameFeild,ConfigReader.getPropertyValue("username"));
+        sendText(passwordFeild,ConfigReader.getPropertyValue("password"));
+        //usernameFeild.sendKeys(ConfigReader.getPropertyValue("username"));//now we changed these to common methods
+        //for send keys
+       // passwordFeild.sendKeys(ConfigReader.getPropertyValue("password"));
     }
 
     @When("user clicks on login button")
