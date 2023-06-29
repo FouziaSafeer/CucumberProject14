@@ -14,7 +14,8 @@ public class AddEmployeePage extends CommonMethods {
     public WebElement firstnameTextBox;
 
 
-
+    @FindBy(id="middleName")
+    public WebElement middleName;
 
     @FindBy(id="lastName")
     public WebElement lastNameTextBox;
@@ -23,6 +24,19 @@ public class AddEmployeePage extends CommonMethods {
 
     @FindBy(id="btnSave")
     public WebElement saveBtn;
+
+    @FindBy(id="personal_txtEmpFirstName")
+    public WebElement employeeFirstNameValue;
+
+    //personal_txtEmpMiddleName
+    @FindBy(id="personal_txtEmpMiddleName")
+    public WebElement employeeMiddleNameValue;
+
+    //personal_txtEmpLastName
+    @FindBy(id="personal_txtEmpLastName")
+    public WebElement employeeLastNameValue;
+
+
 
     public AddEmployeePage(){
         PageFactory.initElements(driver,this);

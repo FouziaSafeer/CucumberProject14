@@ -2,6 +2,7 @@ package steps;
 
 import Pages.AddEmployeePage;
 import Pages.DashboardPage;
+import Pages.EmployeeListPage;
 import Pages.LoginPage;
 
 public class PageInitializer {
@@ -9,6 +10,7 @@ public class PageInitializer {
     public static DashboardPage dashboard;
 
     public static AddEmployeePage addEmployee;
+    public static EmployeeListPage employeeList;
    // public static
 
     public static void initializaPageObjects(){//this will initialize all the objects of our pages objects so we dont need
@@ -16,5 +18,6 @@ public class PageInitializer {
         login=new LoginPage();
         dashboard=new DashboardPage();
         addEmployee=new AddEmployeePage();
+        employeeList =new EmployeeListPage();
     }
 }

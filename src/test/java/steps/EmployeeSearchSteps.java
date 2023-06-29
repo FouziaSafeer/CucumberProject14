@@ -2,8 +2,6 @@ package steps;
 
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import utils.CommonMethods;
 
 public class EmployeeSearchSteps extends CommonMethods {
@@ -16,14 +14,15 @@ public class EmployeeSearchSteps extends CommonMethods {
     }
     @When("user enter valid employee id")
     public void user_enter_valid_employee_id() {
-        WebElement empIdFeild=driver.findElement(By.id("empsearch_id"));
-        sendText(empIdFeild,"59707187");
-
+        //WebElement empIdFeild=driver.findElement(By.id("empsearch_id"));
+      //  sendText(empIdFeild,"59707187");
+      sendText(employeeList.empIdFeild, "59707187");
     }
     @When("user clicks on search button")
     public void user_clicks_on_search_button() {
-        WebElement searchButton=driver.findElement(By.id("searchBtn"));
-        click(searchButton);
+       /* WebElement searchButton=driver.findElement(By.id("searchBtn"));
+        click(searchButton);*/
+        click(employeeList.searchButton);
 
     }
     @Then("user see employee information is displayed")
@@ -34,9 +33,9 @@ public class EmployeeSearchSteps extends CommonMethods {
 
     @When("user enters valid employee name")
     public void user_enters_valid_employee_name() {
-        WebElement searchNameFeild= driver.findElement(By.id("empsearch_employee_name_empName"));
-        sendText(searchNameFeild,"Fouzia");
-
+        //WebElement searchNameFeild= driver.findElement(By.id("empsearch_employee_name_empName"));
+        //sendText(searchNameFeild,"Fouzia");
+sendText(employeeList.searchNameFeild, "Fouzia");
     }
 
 }

@@ -6,6 +6,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -87,6 +88,16 @@ public class LoginSteps extends CommonMethods {
     public void error_message_displayed() {
 
         System.out.println("Error message invalid username and password");
+    }
+    @When("user enters  diffrent {string} and {string} and verify the {string} for it")
+    public void user_enters_diffrent_and_and_verify_the_for_it(String username, String password, String errorMessage) {
+     sendText(login.usernameTextFeild,username);
+     sendText(login.passwordTextFeild,password);
+     click(login.loginButton);
+    String ActualErrorMessage= login.getErrorMessage.getText();
+    String ExceptedErrorMessage=errorMessage;
+    //using assertion from j unit
+        Assert.assertEquals(ActualErrorMessage,ExceptedErrorMessage);
     }
 
 }
