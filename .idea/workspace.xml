@@ -4,20 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8eb120bc-73bb-43ae-b9f9-5e6ee45f583f" name="Changes" comment="POM DashBoard page and AddEmployee">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Pages/EmployeeListPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/steps/Hooks.java" afterDir="false" />
+    <list default="true" id="8eb120bc-73bb-43ae-b9f9-5e6ee45f583f" name="Changes" comment="DataTable and sinario outline">
+      <change afterPath="$PROJECT_DIR$/src/test/java/utils/ExcelReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/testdata/EmployeeData.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Pages/AddEmployeePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/AddEmployeePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/DashboardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/DashboardPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runners/SmokeRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/SmokeRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/steps/AddEmployeeSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/AddEmployeeSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/EmployeeSearchSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/EmployeeSearchSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/LoginSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/LoginSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/PageInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/PageInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/DashboardSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/DashboardSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/Constants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/AddEmployee.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AddEmployee.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/Dashboard.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Dashboard.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/EmployeeSearch.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/EmployeeSearch.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Login.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,15 +48,19 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/rajah/IdeaProjects/Batch14CucumberClasses/src/test/resources/testData&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\rajah\IdeaProjects\Batch14CucumberClasses\src\test\resources\testData" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\rajah\IdeaProjects\Batch14CucumberClasses\src\test\resources\features" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SmokeRunner">
+  <component name="RunManager" selected="Cucumber Java.Scenario: addming multiple employee using data table">
     <configuration name="Scenario: Invalid login functionality" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Login.feature" />
@@ -155,8 +157,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SmokeRunner" />
         <item itemvalue="Cucumber Java.Scenario: addming multiple employee using data table" />
+        <item itemvalue="JUnit.SmokeRunner" />
         <item itemvalue="Cucumber Java.Scenario: Invalid login functionality" />
         <item itemvalue="Cucumber Java.Scenario: US-232 Search employee by name" />
         <item itemvalue="Cucumber Java.Scenario: Valid admin login (1)" />
@@ -221,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687993167169</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="DataTable and sinario outline">
+      <created>1688045801189</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1688045801189</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -249,7 +258,8 @@
     <MESSAGE value="UC 231 Search the employee" />
     <MESSAGE value="Impliment POM and create page of LoginPage" />
     <MESSAGE value="POM DashBoard page and AddEmployee" />
-    <option name="LAST_COMMIT_MESSAGE" value="POM DashBoard page and AddEmployee" />
+    <MESSAGE value="DataTable and sinario outline" />
+    <option name="LAST_COMMIT_MESSAGE" value="DataTable and sinario outline" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

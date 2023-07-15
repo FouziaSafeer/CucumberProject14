@@ -15,7 +15,7 @@ public class AddEmployeePage extends CommonMethods {
 
 
     @FindBy(id="middleName")
-    public WebElement middleName;
+    public WebElement middleNameTextBox;
 
     @FindBy(id="lastName")
     public WebElement lastNameTextBox;
@@ -35,6 +35,25 @@ public class AddEmployeePage extends CommonMethods {
     //personal_txtEmpLastName
     @FindBy(id="personal_txtEmpLastName")
     public WebElement employeeLastNameValue;
+    //photofile
+    @FindBy(id="photofile")
+    public WebElement photograpgh;
+    //chkLogin
+    @FindBy(id="chkLogin")
+    public WebElement checkBox;
+    //user_name
+    @FindBy(id="user_name")
+    public WebElement creatuserNameField;
+    //user_password
+    @FindBy(id="user_password")
+    public WebElement creatpasswordField;
+
+    @FindBy(id ="re_password")
+    public WebElement confirmPasswordField;
+
+
+
+
 
 
 

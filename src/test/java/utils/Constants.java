@@ -10,5 +10,7 @@ public class Constants {
   // String path= System.getProperty("user.dir"); get the directory from root
         public static final int EXPLICIT_WAIT=20;
         public static final int IMPLICIT_WAIT=10;
+        public static final String TESTDATA_FILEPATH = System.getProperty("user.dir")+"/src/test/resources/testdata/EmployeeData.xlsx";
+
 }
 

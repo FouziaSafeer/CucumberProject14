@@ -45,3 +45,7 @@ When user adds multiple employee and verify they are added successfuly
    |Faiza1..    |MS         |SAfeer  |
     |humid1..    |MS         |Ozgin   |
 
+@excel
+Scenario: Adding multiple employee using excel file
+  When  user adds multiple employee from excel using "EmployeeData" and verify it
+  #using sheet name in above EmployeeData
