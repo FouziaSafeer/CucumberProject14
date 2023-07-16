@@ -60,19 +60,19 @@ public static String getCellData(int rowIndex, int colIndex){
 
 //this method will return list of maps havong all the data from ecvel file
     public static List<Map<String,String>>excelListIntoMap(String filePath,String sheetname ){
-        openExcel(filePath);
-        getSheet(sheetname);
+        openExcel(filePath);// opening file
+        getSheet(sheetname);//getting sheet
 //creating a list of maps for all the rows
-        List<Map<String,String>> listData=new ArrayList<>();
+        List<Map<String,String>> listData=new ArrayList<>();//for data container
 
         //loops...outer loop take care of rows
         for (int row=1; row<getRowCount(); row++)//zero row is key so starting from 1st
         {
             //creating the map for every row
             Map<String,String>map=new LinkedHashMap<>();
-
+//for every row column is chaning
                 for (int col=0; col<getColsCount(row); col++){
-                    map.put(getCellData(0,col),getCellData(row,col));//key n value combination
+                    map.put(getCellData(0,col),getCellData(row,col));//key will be same as heading  n value will change combination
                     //now we are getting row same column changing and generating map
                     //
 

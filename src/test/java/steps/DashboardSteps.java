@@ -16,12 +16,12 @@ public class DashboardSteps extends CommonMethods {
 
     }
     @Then("user verify all the dashboard tabs")
-    public void user_verify_all_the_dashboard_tabs(DataTable dataTable) {
+    public void user_verify_all_the_dashboard_tabs(DataTable dataTable) {//DataTable D should be capital
 
         List<String> expectedTabs=dataTable.asList();
 
         List<String>actualTabs=new ArrayList<>(); //why need arry list to get the value in order
-//for using data arry list work as it faster
+//for using data arry list work as it faster1. order 2.faster
         for (WebElement ele:dashboard.dashboardTabs) {
 
             actualTabs.add(ele.getText());

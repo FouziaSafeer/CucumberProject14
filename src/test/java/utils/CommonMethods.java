@@ -43,7 +43,7 @@ public class CommonMethods extends PageInitializer {
 
     //we use this method instead of send keys
     public static void sendText(WebElement element,String textToSend)
-    {  element.click();
+    {  element.clear();
         element.sendKeys(textToSend);
 
     }
