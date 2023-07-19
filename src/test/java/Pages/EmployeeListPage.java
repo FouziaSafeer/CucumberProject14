@@ -10,6 +10,7 @@ public class EmployeeListPage extends CommonMethods {
 
     @FindBy(id="empsearch_id")
     public WebElement empIdFeild;
+    //input[id='empsearch_id']
 
 
     @FindBy(id="searchBtn")

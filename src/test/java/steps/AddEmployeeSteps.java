@@ -126,6 +126,8 @@ public class AddEmployeeSteps extends CommonMethods {
             sendText(addEmployee.firstnameTextBox, mapNewEmp.get("firstName"));//send data
             sendText(addEmployee.middleNameTextBox, mapNewEmp.get("middleName"));
             sendText(addEmployee.lastNameTextBox, mapNewEmp.get("lastName"));
+
+
             Thread.sleep(2000);
             sendText(addEmployee.photograpgh, mapNewEmp.get("photograph"));
             if (!addEmployee.checkBox.isSelected()) {
@@ -134,15 +136,45 @@ public class AddEmployeeSteps extends CommonMethods {
             sendText(addEmployee.creatuserNameField, mapNewEmp.get("username"));
             sendText(addEmployee.creatpasswordField, mapNewEmp.get("password"));
             sendText(addEmployee.confirmPasswordField, mapNewEmp.get("confirmPassword"));
+            String empIdValue;
+            empIdValue=addEmployee.EmployeeId.getAttribute("value");
 
             click(addEmployee.saveBtn);
+            System.out.println("click on save button");
 
             //verification in homework
 
 
             Thread.sleep(2000);//so load properply
+            //going toi empoliyee list page
+            click(dashboard.empListOption);
+            Thread.sleep(2000);
+            //search employee , we use emp id which we capture
+            sendText(employeeList.empIdFeild, empIdValue);
+            click(employeeList.searchButton);
+
+            //verfying the employee added from excel file
+            List<WebElement>rowData=driver.findElements(By.xpath("//*[@id='resultTable']/tbody/tr"));
+
+            for (int i=0;    i<rowData.size();   i++)
+            {
+                System.out.println("I am inside the loop and worried about josh");
+                //getting the text of every element from here and storing into string
+                String rowText =rowData.get(i).getText();
+                System.out.println(rowText);
+                String expectedData=empIdValue+" "+mapNewEmp.get("firstName")+" "+mapNewEmp.get("middleName")+" "
+                        +mapNewEmp.get("lastName");
+                //veryfying  exact details of employee
+                Assert.assertEquals(expectedData,rowText);
+
+            }
+
+
+
             click(dashboard.AddEmployeeOption);
             Thread.sleep(2000);
+
+
 
 
         }

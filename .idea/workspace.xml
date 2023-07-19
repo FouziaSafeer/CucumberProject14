@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8eb120bc-73bb-43ae-b9f9-5e6ee45f583f" name="Changes" comment="DataTable and sinario outline">
+    <list default="true" id="8eb120bc-73bb-43ae-b9f9-5e6ee45f583f" name="Changes" comment="ExcelReader is working find after fixing bug">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/AddEmployeePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/AddEmployeePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Pages/EmployeeListPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Pages/EmployeeListPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/steps/AddEmployeeSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/AddEmployeeSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/DashboardSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/DashboardSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/CommonMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/CommonMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/ExcelReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/ExcelReader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/testdata/EmployeeData.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testdata/EmployeeData.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -233,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689413183378</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="ExcelReader is working find after fixing bug">
+      <created>1689490735719</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1689490735719</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -262,7 +268,8 @@
     <MESSAGE value="Impliment POM and create page of LoginPage" />
     <MESSAGE value="POM DashBoard page and AddEmployee" />
     <MESSAGE value="DataTable and sinario outline" />
-    <option name="LAST_COMMIT_MESSAGE" value="DataTable and sinario outline" />
+    <MESSAGE value="ExcelReader is working find after fixing bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="ExcelReader is working find after fixing bug" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
